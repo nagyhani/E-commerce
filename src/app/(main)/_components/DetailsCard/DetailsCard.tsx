@@ -92,7 +92,7 @@ const { setCount, count } = context;
     <div className='grid grid-cols-12 items-center'>
 
           
-        <div className='col-span-4'>
+        <div className='col-span-4 w-3/12'>
           <Popover>
       <PopoverTrigger asChild>
          <Image className='cursor-pointer' src={imageCover} alt={title} width={400} height={400}/>
