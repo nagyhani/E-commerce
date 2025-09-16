@@ -97,7 +97,7 @@ const { setCount, count } = context;
       <PopoverTrigger asChild>
          <Image className='cursor-pointer' src={imageCover} alt={title} width={400} height={400}/>
       </PopoverTrigger>
-      <PopoverContent className="w-96 relative left-60 bottom-80">
+      <PopoverContent className="w-96 relative left-25 bottom-30">
          <Carousel className="w-4/6">
   <CarouselContent>
     {images.map((img, index) => (
