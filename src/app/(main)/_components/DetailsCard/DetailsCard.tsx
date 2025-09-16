@@ -121,12 +121,7 @@ const { setCount, count } = context;
 
         <div className='col-span-8'>
          <div className='flex justify-end'>
-           <Button
-              onClick={() => addProductToWishList(_id)}
-              className=" bg-main text-white rounded-2xl cursor-pointer"
-            >
-              Add To Wishlist
-            </Button>
+           
          </div>
            <div>
             <h2 className='my-2 text-2xl'>{title}</h2>
@@ -147,6 +142,13 @@ const { setCount, count } = context;
             }} variant="outline" className=" mx-auto bg-main text-white rounded-2xl cursor-pointer mt-2.5">
                    Add To Cart
                   </Button>
+
+                  <Button
+              onClick={() => addProductToWishList(_id)}
+              className=" bg-main text-white rounded-2xl cursor-pointer"
+            >
+              Add To Wishlist
+            </Button>
         </div>
     </div>
   )
