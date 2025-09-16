@@ -41,20 +41,17 @@ export default function Orders() {
 
             
 
-                {order.cartItems.map((element)=>{
-
-                  return (
-                      <div  key={element._id} className=' border p-8 flex items-center justify-between rounded-2xl'>
-
-
-                        <Image src={element.product.imageCover} alt= {element.product.title} width={100} height={100} />
-
-                        <p className='ms-6'> {element.product.title}</p>
-                      </div>
-                    
-                  )
-                })}
-
+             {Array.isArray(order.cartItems) && order.cartItems.map((element) => (
+  <div key={element._id} className="border p-8 flex items-center justify-between rounded-2xl">
+    <Image
+      src={element.product.imageCover}
+      alt={element.product.title}
+      width={100}
+      height={100}
+    />
+    <p className="ms-6">{element.product.title}</p>
+  </div>
+))}
              
             </div>
           ))
