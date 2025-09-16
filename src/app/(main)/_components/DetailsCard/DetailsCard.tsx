@@ -140,7 +140,7 @@ const { setCount, count } = context;
               productToCart(_id)
           
             }} variant="outline" className=" mx-auto bg-main text-white rounded-2xl cursor-pointer mt-2.5">
-                   Add To Cart
+                   Add To Cart 
                   </Button>
 
                   <Button
