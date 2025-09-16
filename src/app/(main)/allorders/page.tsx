@@ -14,7 +14,7 @@ export default function Orders() {
 
   async function handelOrders() {
     const data: OrdersItems[] = await ordersReview()
-    setItem(data)
+    setItem(Array.isArray(data) ? data : [])
   }
 
   return (
