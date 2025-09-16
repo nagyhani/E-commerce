@@ -95,10 +95,10 @@ const { setCount, count } = context;
         <div className='col-span-4 '>
           <Popover>
       <PopoverTrigger asChild>
-         <Image className='cursor-pointer' src={imageCover} alt={title} width={400} height={400}/>
+         <Image className='cursor-pointer' src={imageCover} alt={title} width={500} height={500}/>
       </PopoverTrigger>
-      <PopoverContent className="w-6/12 relative left-25 bottom-30">
-         <Carousel className="w-4/6">
+      <PopoverContent className="w-40 relative left-25 bottom-30">
+         <Carousel className="w-4/12">
   <CarouselContent>
     {images.map((img, index) => (
       <CarouselItem key={index}>
