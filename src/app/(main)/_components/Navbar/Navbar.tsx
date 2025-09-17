@@ -62,7 +62,7 @@ export function Navbar() {
 
       
         <button
-          className="md:hidden"
+          className="lg:hidden"
           onClick={() => setIsOpen((prev) => !prev)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
