@@ -69,7 +69,7 @@ export function Navbar() {
         </button>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex w-full justify-between ">
+        <div className="hidden lg:flex w-full justify-between ">
           <NavigationMenu viewport={false} className="flex">
             <NavigationMenuList className="mx-4">
               {menuItems.map((ele) => (
