@@ -24,7 +24,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-import { Menu, X } from "lucide-react" // 👈 icons for mobile toggle
+import { Menu, X } from "lucide-react" 
 
 const menuItems: { path: string; content: string; authintacted: boolean }[] = [
   { path: "/", content: "Home", authintacted: false },
@@ -68,7 +68,6 @@ export function Navbar() {
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
-        {/* Desktop Menu */}
         <div className="hidden lg:flex w-full justify-between ">
           <NavigationMenu viewport={false} className="flex">
             <NavigationMenuList className="mx-4">
@@ -110,7 +109,7 @@ export function Navbar() {
             </NavigationMenuList>
           </NavigationMenu>
 
-          {/* Right side (auth links) */}
+        
           <div className="flex items-center">
             {x.status === "authenticated" ? (
               <>
@@ -150,9 +149,9 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
+    
       {isOpen && (
-        <div className="md:hidden flex flex-col space-y-4 px-6 py-4 bg-white shadow-lg">
+        <div className="lg:hidden flex flex-col space-y-4 px-6 py-4 bg-white shadow-lg">
           {menuItems.map((ele) => {
             if (ele.authintacted && x.status !== "authenticated") return null
             return (
