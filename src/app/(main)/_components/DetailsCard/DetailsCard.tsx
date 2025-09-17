@@ -92,13 +92,13 @@ const { setCount, count } = context;
     <div className='grid grid-cols-12 items-center'>
 
           
-        <div className='col-span-4 '>
+        <div className='col-span-5 '>
           <Popover>
       <PopoverTrigger asChild>
          <Image className='cursor-pointer' src={imageCover} alt={title} width={500} height={500}/>
       </PopoverTrigger>
-      <PopoverContent className="w-72 md:w-96 relative left-25 bottom-65">
-         <Carousel className="w-3/4 md:w-full">
+      <PopoverContent className="w-72 md:w-96 relative left-18 bottom-40 xl:top-[500]">
+         <Carousel className="w-full">
   <CarouselContent>
     {images.map((img, index) => (
       <CarouselItem key={index}>
@@ -119,7 +119,7 @@ const { setCount, count } = context;
             
         </div>
 
-        <div className='col-span-8'>
+        <div className='col-span-7'>
          <div className='flex justify-end'>
            
          </div>
@@ -139,13 +139,13 @@ const { setCount, count } = context;
             <Button  onClick={()=>{
               productToCart(_id)
           
-            }} variant="outline" className=" mx-auto bg-main text-white rounded-2xl cursor-pointer mt-2.5">
+            }}  className=" mx-auto bg-main text-white rounded-2xl cursor-pointer m-2.5">
                    Add To Cart 
                   </Button>
 
                   <Button
               onClick={() => addProductToWishList(_id)}
-              className=" bg-main text-white rounded-2xl cursor-pointer"
+              className=" bg-main text-white rounded-2xl cursor-pointer m-2.5"
             >
               Add To Wishlist
             </Button>
